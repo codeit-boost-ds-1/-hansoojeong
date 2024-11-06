@@ -5,6 +5,7 @@ import SearchForm from '@/components/SearchForm';
 import axios from '@/lib/axios';
 import styles from '@/styles/Search.module.css';
 import Container from '@/components/Container';
+import Head from 'next/head';
 
 export default function Search() {
   const [products, setProducts] = useState([]);
