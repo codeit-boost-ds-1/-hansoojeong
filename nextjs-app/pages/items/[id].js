@@ -36,7 +36,6 @@ export default function Product() {
 
   return (
     <>
-      <Header />
       <Container>
         <h1 className={styles.name}>
           {product.name}

@@ -4,7 +4,6 @@ import ProductList from '@/components/ProductList';
 import SearchForm from '@/components/SearchForm';
 import axios from '@/lib/axios';
 import styles from '@/styles/Search.module.css';
-import Header from '@/components/Header';
 import Container from '@/components/Container';
 
 export default function Search() {
@@ -25,7 +24,6 @@ export default function Search() {
 
   return (
     <div>
-      <Header />
       <Container>
         <SearchForm initialValue={q} />
         <h2 className={styles.title}>
