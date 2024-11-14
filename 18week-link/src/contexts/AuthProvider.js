@@ -43,8 +43,14 @@ export function AuthProvider({ children }) {
   }
 
   async function logout() {
-    /** @TODO 로그아웃 구현하기 */
+    await axios.delete('/auth/logout');
+    setValues((prevValues) => ({
+      ...prevValues,
+      user: null,
+      avatar: null,
+    }));
   }
+  
 
   async function updateMe(formData) {
     const res = await axios.patch('/users/me', formData);
